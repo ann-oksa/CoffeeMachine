@@ -73,10 +73,8 @@ class CoffeeMachine: CMachineProtocol {
     
     func addSomeComponent(_ some: MyCoffeeComponentType) -> Bool {
         let component : ComponentContain = getComponentByType(some)!
-             // component.addVolume(valueForAdd)
         component.volume = valueForAdd
         message = "Component \(some) added"
-        
         return true
         
     }
