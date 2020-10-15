@@ -356,7 +356,6 @@
                         <outlet property="addWater" destination="rM6-rq-lqd" id="XjR-hR-V2W"/>
                         <outlet property="beansVolumeSlider" destination="iIn-PC-yeo" id="ARw-8A-xWF"/>
                         <outlet property="clearTrash" destination="5T4-cC-cMl" id="0oD-js-tPm"/>
-                        <outlet property="cnstrMakeAmericanoWight" destination="Cw7-uS-ZaL" id="aAy-Mw-IaB"/>
                         <outlet property="label" destination="hUG-c3-Iod" id="khk-UA-lc4"/>
                         <outlet property="makeAmericano" destination="fuI-sR-4XZ" id="CTN-gB-BI3"/>
                         <outlet property="makeCapuchino" destination="gTh-pq-6qS" id="yuF-MK-Gta"/>

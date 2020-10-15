@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		CA271A05253477030094AEC2 /* DrinkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA271A04253477030094AEC2 /* DrinkFactory.swift */; };
 		CA3073D7252F20670015CEB5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3073D6252F20670015CEB5 /* RoundButton.swift */; };
-		CA3073DB252F4E2B0015CEB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3073DA252F4E2B0015CEB5 /* ViewController.swift */; };
+		CA3073DB252F4E2B0015CEB5 /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */; };
 		CA5D1D1325001715000B4EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D1225001715000B4EB3 /* AppDelegate.swift */; };
 		CA5D1D1525001715000B4EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */; };
 		CA5D1D1A25001715000B4EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1825001715000B4EB3 /* Main.storyboard */; };
 		CA5D1D1C2500171E000B4EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1B2500171E000B4EB3 /* Assets.xcassets */; };
 		CA5D1D1F2500171E000B4EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1D2500171E000B4EB3 /* LaunchScreen.storyboard */; };
 		CA606C68251A650200E51D39 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA606C67251A650200E51D39 /* CoffeeMachine.swift */; };
-		CA6DE02C252AF0C8009970EB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DE02B252AF0C8009970EB /* Global.swift */; };
+		CA6DE02C252AF0C8009970EB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DE02B252AF0C8009970EB /* AppState.swift */; };
 		CAFDC2BE2524C71B00E21521 /* CoffeeMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDC2BD2524C71B00E21521 /* CoffeeMachineTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		CA271A04253477030094AEC2 /* DrinkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFactory.swift; sourceTree = "<group>"; };
 		CA3073D6252F20670015CEB5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		CA3073DA252F4E2B0015CEB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
 		CA5D1D0F25001715000B4EB3 /* CoffeeMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D1D1225001715000B4EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		CA5D1D1E2500171E000B4EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5D1D202500171E000B4EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA606C67251A650200E51D39 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
-		CA6DE02B252AF0C8009970EB /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		CA6DE02B252AF0C8009970EB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CAFDC2BB2524C71B00E21521 /* CoffeeMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFDC2BD2524C71B00E21521 /* CoffeeMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineTests.swift; sourceTree = "<group>"; };
 		CAFDC2BF2524C71B00E21521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,10 +89,10 @@
 			children = (
 				CA5D1D1225001715000B4EB3 /* AppDelegate.swift */,
 				CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */,
-				CA3073DA252F4E2B0015CEB5 /* ViewController.swift */,
+				CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */,
 				CA606C67251A650200E51D39 /* CoffeeMachine.swift */,
 				CA271A04253477030094AEC2 /* DrinkFactory.swift */,
-				CA6DE02B252AF0C8009970EB /* Global.swift */,
+				CA6DE02B252AF0C8009970EB /* AppState.swift */,
 				CA3073D6252F20670015CEB5 /* RoundButton.swift */,
 				CA5D1D1825001715000B4EB3 /* Main.storyboard */,
 				CA5D1D1B2500171E000B4EB3 /* Assets.xcassets */,
@@ -212,13 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3073DB252F4E2B0015CEB5 /* ViewController.swift in Sources */,
+				CA3073DB252F4E2B0015CEB5 /* CoffeeViewController.swift in Sources */,
 				CA5D1D1325001715000B4EB3 /* AppDelegate.swift in Sources */,
 				CA606C68251A650200E51D39 /* CoffeeMachine.swift in Sources */,
 				CA5D1D1525001715000B4EB3 /* SceneDelegate.swift in Sources */,
 				CA3073D7252F20670015CEB5 /* RoundButton.swift in Sources */,
 				CA271A05253477030094AEC2 /* DrinkFactory.swift in Sources */,
-				CA6DE02C252AF0C8009970EB /* Global.swift in Sources */,
+				CA6DE02C252AF0C8009970EB /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

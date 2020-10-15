@@ -28,7 +28,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var makeFlatWhite: UIButton!
     @IBOutlet weak var makeWarmMilk: UIButton!
     
-    @IBOutlet weak var cnstrMakeAmericanoWight: NSLayoutConstraint!
     
     let machine = CoffeeMachine()
     let cm = AppState.shared.coffeeMachine    
@@ -48,7 +47,6 @@ class ViewController: UIViewController {
         trashVolumeSlider.maximumValue = Float(cm.trashCapacity)
         
         updateAllValues()
-        cnstrMakeAmericanoWight.constant = 40
     }
     
     @IBAction func addWaterButton(_ sender: UIButton) {
