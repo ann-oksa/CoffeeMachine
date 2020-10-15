@@ -7,31 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA271A05253477030094AEC2 /* DrinkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA271A04253477030094AEC2 /* DrinkFactory.swift */; };
+		CA3073D7252F20670015CEB5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3073D6252F20670015CEB5 /* RoundButton.swift */; };
+		CA3073DB252F4E2B0015CEB5 /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */; };
 		CA5D1D1325001715000B4EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D1225001715000B4EB3 /* AppDelegate.swift */; };
 		CA5D1D1525001715000B4EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */; };
-		CA5D1D1725001715000B4EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D1625001715000B4EB3 /* ViewController.swift */; };
 		CA5D1D1A25001715000B4EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1825001715000B4EB3 /* Main.storyboard */; };
 		CA5D1D1C2500171E000B4EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1B2500171E000B4EB3 /* Assets.xcassets */; };
 		CA5D1D1F2500171E000B4EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1D1D2500171E000B4EB3 /* LaunchScreen.storyboard */; };
-		CA5D1D2725002271000B4EB3 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D1D2625002271000B4EB3 /* Coffee.swift */; };
-		CA606C68251A650200E51D39 /* OneMoreCoffeeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA606C67251A650200E51D39 /* OneMoreCoffeeClass.swift */; };
+		CA606C68251A650200E51D39 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA606C67251A650200E51D39 /* CoffeeMachine.swift */; };
+		CA6DE02C252AF0C8009970EB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DE02B252AF0C8009970EB /* AppState.swift */; };
+		CAFDC2BE2524C71B00E21521 /* CoffeeMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDC2BD2524C71B00E21521 /* CoffeeMachineTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CAFDC2C02524C71B00E21521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5D1D0725001715000B4EB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5D1D0E25001715000B4EB3;
+			remoteInfo = CoffeeMachine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CA271A04253477030094AEC2 /* DrinkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkFactory.swift; sourceTree = "<group>"; };
+		CA3073D6252F20670015CEB5 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
 		CA5D1D0F25001715000B4EB3 /* CoffeeMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D1D1225001715000B4EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA5D1D1625001715000B4EB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA5D1D1925001715000B4EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA5D1D1B2500171E000B4EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5D1D1E2500171E000B4EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5D1D202500171E000B4EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA5D1D2625002271000B4EB3 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		CA606C67251A650200E51D39 /* OneMoreCoffeeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreCoffeeClass.swift; sourceTree = "<group>"; };
+		CA606C67251A650200E51D39 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		CA6DE02B252AF0C8009970EB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CAFDC2BB2524C71B00E21521 /* CoffeeMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFDC2BD2524C71B00E21521 /* CoffeeMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachineTests.swift; sourceTree = "<group>"; };
+		CAFDC2BF2524C71B00E21521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA5D1D0C25001715000B4EB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFDC2B82524C71B00E21521 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5D1D1125001715000B4EB3 /* CoffeeMachine */,
+				CAFDC2BC2524C71B00E21521 /* CoffeeMachineTests */,
 				CA5D1D1025001715000B4EB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5D1D0F25001715000B4EB3 /* CoffeeMachine.app */,
+				CAFDC2BB2524C71B00E21521 /* CoffeeMachineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,15 +89,26 @@
 			children = (
 				CA5D1D1225001715000B4EB3 /* AppDelegate.swift */,
 				CA5D1D1425001715000B4EB3 /* SceneDelegate.swift */,
-				CA5D1D1625001715000B4EB3 /* ViewController.swift */,
-				CA5D1D2625002271000B4EB3 /* Coffee.swift */,
-				CA606C67251A650200E51D39 /* OneMoreCoffeeClass.swift */,
+				CA3073DA252F4E2B0015CEB5 /* CoffeeViewController.swift */,
+				CA606C67251A650200E51D39 /* CoffeeMachine.swift */,
+				CA271A04253477030094AEC2 /* DrinkFactory.swift */,
+				CA6DE02B252AF0C8009970EB /* AppState.swift */,
+				CA3073D6252F20670015CEB5 /* RoundButton.swift */,
 				CA5D1D1825001715000B4EB3 /* Main.storyboard */,
 				CA5D1D1B2500171E000B4EB3 /* Assets.xcassets */,
 				CA5D1D1D2500171E000B4EB3 /* LaunchScreen.storyboard */,
 				CA5D1D202500171E000B4EB3 /* Info.plist */,
 			);
 			path = CoffeeMachine;
+			sourceTree = "<group>";
+		};
+		CAFDC2BC2524C71B00E21521 /* CoffeeMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDC2BD2524C71B00E21521 /* CoffeeMachineTests.swift */,
+				CAFDC2BF2524C71B00E21521 /* Info.plist */,
+			);
+			path = CoffeeMachineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,18 +131,40 @@
 			productReference = CA5D1D0F25001715000B4EB3 /* CoffeeMachine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CAFDC2BA2524C71B00E21521 /* CoffeeMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFDC2C42524C71B00E21521 /* Build configuration list for PBXNativeTarget "CoffeeMachineTests" */;
+			buildPhases = (
+				CAFDC2B72524C71B00E21521 /* Sources */,
+				CAFDC2B82524C71B00E21521 /* Frameworks */,
+				CAFDC2B92524C71B00E21521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFDC2C12524C71B00E21521 /* PBXTargetDependency */,
+			);
+			name = CoffeeMachineTests;
+			productName = CoffeeMachineTests;
+			productReference = CAFDC2BB2524C71B00E21521 /* CoffeeMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CA5D1D0725001715000B4EB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Anna Oksanichenko";
 				TargetAttributes = {
 					CA5D1D0E25001715000B4EB3 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					CAFDC2BA2524C71B00E21521 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = CA5D1D0E25001715000B4EB3;
 					};
 				};
 			};
@@ -122,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				CA5D1D0E25001715000B4EB3 /* CoffeeMachine */,
+				CAFDC2BA2524C71B00E21521 /* CoffeeMachineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +198,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAFDC2B92524C71B00E21521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,15 +212,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5D1D1725001715000B4EB3 /* ViewController.swift in Sources */,
+				CA3073DB252F4E2B0015CEB5 /* CoffeeViewController.swift in Sources */,
 				CA5D1D1325001715000B4EB3 /* AppDelegate.swift in Sources */,
-				CA606C68251A650200E51D39 /* OneMoreCoffeeClass.swift in Sources */,
+				CA606C68251A650200E51D39 /* CoffeeMachine.swift in Sources */,
 				CA5D1D1525001715000B4EB3 /* SceneDelegate.swift in Sources */,
-				CA5D1D2725002271000B4EB3 /* Coffee.swift in Sources */,
+				CA3073D7252F20670015CEB5 /* RoundButton.swift in Sources */,
+				CA271A05253477030094AEC2 /* DrinkFactory.swift in Sources */,
+				CA6DE02C252AF0C8009970EB /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFDC2B72524C71B00E21521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFDC2BE2524C71B00E21521 /* CoffeeMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAFDC2C12524C71B00E21521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5D1D0E25001715000B4EB3 /* CoffeeMachine */;
+			targetProxy = CAFDC2C02524C71B00E21521 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA5D1D1825001715000B4EB3 /* Main.storyboard */ = {
@@ -324,6 +410,50 @@
 			};
 			name = Release;
 		};
+		CAFDC2C22524C71B00E21521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8KU8W72YT;
+				INFOPLIST_FILE = CoffeeMachineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oksanichenkoann.CoffeeMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeMachine.app/CoffeeMachine";
+			};
+			name = Debug;
+		};
+		CAFDC2C32524C71B00E21521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8KU8W72YT;
+				INFOPLIST_FILE = CoffeeMachineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oksanichenkoann.CoffeeMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeMachine.app/CoffeeMachine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +471,15 @@
 			buildConfigurations = (
 				CA5D1D242500171E000B4EB3 /* Debug */,
 				CA5D1D252500171E000B4EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFDC2C42524C71B00E21521 /* Build configuration list for PBXNativeTarget "CoffeeMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFDC2C22524C71B00E21521 /* Debug */,
+				CAFDC2C32524C71B00E21521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -17,8 +17,12 @@ enum MyCoffeeComponentType {
 }
 
 // у компонента есть тип и обьем
-class ComponentContain {
-    var type: MyCoffeeComponentType
+class ComponentContain : Equatable {
+    static func == (lhs: ComponentContain, rhs: ComponentContain) -> Bool {
+        return lhs.type == rhs.type
+    }
+    
+    var type : MyCoffeeComponentType
     var volume : Int
     var minvol = 20
     
@@ -30,30 +34,21 @@ class ComponentContain {
     func addVolume(_ extraVol: Int) {
         volume += extraVol
     }
+    
     func removeVolume(_ extraVol: Int) {
         volume -= extraVol
     }
 }
 
-//у напитка есть имя и компоненты
-class myDrink {
-    let name: String
-    var components = [ComponentContain]()
-    init(name: String, components : [ComponentContain]) {
-        self.name = name
-        self.components = components
-    }
-}
-
 protocol CMachineProtocol {
-    func letsMakeDrink(_ drink: myDrink) -> Bool
+    func letsMakeDrink(_ drink: MyDrink) -> Bool
     func addSomeComponent(_ some: MyCoffeeComponentType) -> Bool
-    func canMakeADrink(_ drink: myDrink) -> Bool
-    func hasEnoughComponentOfType(_ type: ComponentContain) -> Bool
+    func canMakeADrink(_ drink: MyDrink) -> Bool
+    func hasEnoughComponentOfType(_ type: MyCoffeeComponentType) -> Bool
     func refreshTrash() -> Int
 }
 
-class CMachine: CMachineProtocol {
+class CoffeeMachine: CMachineProtocol {
     
     // изначально кофе машина не заполнена
     let valueForAdd : Int = 100
@@ -61,9 +56,14 @@ class CMachine: CMachineProtocol {
     var trash = 0
     var trashCapacity = 50
     var message = ""
-    var testComponent : ComponentContain? = nil
     
-    private func getComponentByType(_ type: MyCoffeeComponentType) -> ComponentContain? {
+    init() {
+        availableComponents.append(ComponentContain(type: .beans, volume: 100))
+        availableComponents.append(ComponentContain(type: .milk, volume: 100))
+        availableComponents.append(ComponentContain(type: .water, volume: 100))
+    }
+    
+    func getComponentByType(_ type: MyCoffeeComponentType) -> ComponentContain? {
         for component in availableComponents {
             if component.type == type {
                 return component
@@ -74,22 +74,22 @@ class CMachine: CMachineProtocol {
     
     func addSomeComponent(_ some: MyCoffeeComponentType) -> Bool {
         let component : ComponentContain = getComponentByType(some)!
-        component.addVolume(valueForAdd)
+        component.volume = valueForAdd
         message = "Component \(some) added"
         return true
+        
     }
     
-    func hasEnoughComponentOfType(_ type: ComponentContain) -> Bool {
-        for components in availableComponents {
-            if components.volume < type.minvol {
-                return false
+    func hasEnoughComponentOfType(_ type: MyCoffeeComponentType) -> Bool {
+        for component in availableComponents {
+            if component.type == type {
+                return component.volume >= component.minvol
             }
         }
-        return true
+        return false
     }
     
-    
-    func canMakeADrink(_ drink: myDrink) -> Bool {
+    func canMakeADrink(_ drink: MyDrink) -> Bool {
         for drinkComponent in drink.components {
             if let machineComponent = getComponentByType(drinkComponent.type) {
                 if machineComponent.volume < drinkComponent.volume {
@@ -98,7 +98,7 @@ class CMachine: CMachineProtocol {
                 }
             }
         }
-        if trash > trashCapacity {
+        if trash >= trashCapacity {
             message = "Refresh trash"
             return false
         }
@@ -106,9 +106,7 @@ class CMachine: CMachineProtocol {
         return true
     }
     
-    
-    
-    func letsMakeDrink(_ drink: myDrink) -> Bool {
+    func letsMakeDrink(_ drink: MyDrink) -> Bool {
         if canMakeADrink(drink) {
             for drinkComponent in drink.components {
                 let machineComponent = getComponentByType(drinkComponent.type)
@@ -123,9 +121,9 @@ class CMachine: CMachineProtocol {
     }
     
     func refreshTrash() -> Int {
-        let value = trash - trash
+        trash = 0
         message = "Value of trash: \(trash)"
-        return value
+        return trash
     }
     
 }
