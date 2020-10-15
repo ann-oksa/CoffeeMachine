@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yvH-JN-6Hg">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -14,21 +14,21 @@
             <objects>
                 <viewController id="yvH-JN-6Hg" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8X-9s-Hr0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Machine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUG-c3-Iod">
-                                <rect key="frame" x="20" y="65" width="780" height="17"/>
+                                <rect key="frame" x="20" y="21" width="280" height="17"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-XW-U6R">
-                                <rect key="frame" x="20" y="113" width="780" height="120"/>
+                                <rect key="frame" x="20" y="69" width="280" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-cS-iKa">
-                                        <rect key="frame" x="0.0" y="0.0" width="780" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-nV-rfc">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -40,13 +40,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pwx-ZU-Wzz">
-                                                <rect key="frame" x="68" y="0.0" width="714" height="31"/>
+                                                <rect key="frame" x="68" y="0.0" width="214" height="31"/>
                                                 <color key="tintColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-kq-pEF">
-                                        <rect key="frame" x="0.0" y="30" width="780" height="30"/>
+                                        <rect key="frame" x="0.0" y="30" width="280" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-yL-4yy">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -55,13 +55,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pgx-cg-Bft">
-                                                <rect key="frame" x="68" y="0.0" width="714" height="31"/>
+                                                <rect key="frame" x="68" y="0.0" width="214" height="31"/>
                                                 <color key="tintColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VaO-WV-bgG">
-                                        <rect key="frame" x="0.0" y="60" width="780" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="280" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSm-W4-Iip">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -70,13 +70,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iIn-PC-yeo">
-                                                <rect key="frame" x="68" y="0.0" width="714" height="31"/>
+                                                <rect key="frame" x="68" y="0.0" width="214" height="31"/>
                                                 <color key="tintColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sfi-He-rqx">
-                                        <rect key="frame" x="0.0" y="90" width="780" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="280" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m02-DN-da7">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -85,7 +85,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iHn-hF-rj6">
-                                                <rect key="frame" x="68" y="0.0" width="714" height="31"/>
+                                                <rect key="frame" x="68" y="0.0" width="214" height="31"/>
                                                 <color key="tintColor" red="0.77517133949999995" green="0.69181537630000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </slider>
                                         </subviews>
@@ -97,356 +97,258 @@
                                     <constraint firstItem="XSm-W4-Iip" firstAttribute="width" secondItem="Rlc-nV-rfc" secondAttribute="width" id="nqv-P9-YG9"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Kyt-jY-x0Q">
-                                <rect key="frame" x="76" y="263" width="495" height="116"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0H-Ta-r2Y">
+                                <rect key="frame" x="25" y="217" width="270" height="116"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-rq-lqd">
-                                        <rect key="frame" x="0.0" y="0.0" width="495" height="29"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                        <state key="normal" title="Add water">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Kyt-jY-x0Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="116"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-rq-lqd">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="29"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <state key="normal" title="Add water">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addWaterButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="ejg-Ja-SKC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFu-vD-LCC">
+                                                <rect key="frame" x="0.0" y="87" width="89" height="29"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <state key="normal" title="Add milk">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addMilkButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="QSO-58-rtH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="24"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-FN-mwF">
+                                        <rect key="frame" x="175" y="0.0" width="95" height="116"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Gx-Cjn">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="29"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <state key="normal" title="Add beans">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addBeansButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="oa9-z6-X3U"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5T4-cC-cMl">
+                                                <rect key="frame" x="0.0" y="87" width="95" height="29"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                <state key="normal" title="Clear trash">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cleanTrashButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="pRM-kL-d2I"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="24"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" spacing="86"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ky8-NJ-noX">
+                                <rect key="frame" x="62" y="448" width="200" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-Xi-qkX" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Qkv-jA-WqB"/>
+                                            <constraint firstAttribute="width" constant="90" id="ueU-2g-tzU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <state key="normal" title="Flat White">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="addWaterButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="ejg-Ja-SKC"/>
+                                            <action selector="flatWhiteButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="can-Oh-r3E"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFu-vD-LCC">
-                                        <rect key="frame" x="0.0" y="87" width="495" height="29"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                        <state key="normal" title="Add milk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWs-bw-c7G" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <state key="normal" title="Warm Milk">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="addMilkButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="QSO-58-rtH"/>
+                                            <action selector="warmMilkButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="Pfr-Xu-5yh"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="HnD-LK-dca"/>
+                                    <constraint firstItem="JWs-bw-c7G" firstAttribute="width" secondItem="2Xz-Xi-qkX" secondAttribute="width" id="Vr5-4b-f9B"/>
+                                    <constraint firstItem="JWs-bw-c7G" firstAttribute="height" secondItem="2Xz-Xi-qkX" secondAttribute="height" id="yg6-6b-86a"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="HnD-LK-dca"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular" spacing="24">
-                                    <mask key="constraints">
-                                        <include reference="HnD-LK-dca"/>
-                                    </mask>
-                                </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-FN-mwF">
-                                <rect key="frame" x="728" y="263" width="95" height="116"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-i3-Qrv">
+                                <rect key="frame" x="23" y="350" width="274" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Gx-Cjn">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="29"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                        <state key="normal" title="Add beans">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-sR-4XZ" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.81440482655228308" green="0.81492467250799239" blue="0.97071303934010156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="94" id="5hD-Of-Epg"/>
+                                            <constraint firstAttribute="height" constant="90" id="BBu-rX-S6H"/>
+                                            <constraint firstAttribute="width" constant="90" id="Cw7-uS-ZaL"/>
+                                            <constraint firstAttribute="width" constant="94" id="kq9-kE-B7d"/>
+                                            <constraint firstAttribute="width" constant="94" id="tz5-w4-j29"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <state key="normal" title="Americano">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5hD-Of-Epg"/>
+                                                <exclude reference="BBu-rX-S6H"/>
+                                                <exclude reference="Cw7-uS-ZaL"/>
+                                                <exclude reference="kq9-kE-B7d"/>
+                                                <exclude reference="tz5-w4-j29"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="5hD-Of-Epg"/>
+                                                <include reference="kq9-kE-B7d"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="BBu-rX-S6H"/>
+                                                <include reference="Cw7-uS-ZaL"/>
+                                                <exclude reference="tz5-w4-j29"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
-                                            <action selector="addBeansButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="oa9-z6-X3U"/>
+                                            <action selector="americanoButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="UjB-Jc-wvA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5T4-cC-cMl">
-                                        <rect key="frame" x="0.0" y="87" width="95" height="29"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                        <state key="normal" title="Clear trash">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-Nw-yPa" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
+                                        <rect key="frame" x="92" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <state key="normal" title="Latte">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="cleanTrashButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="pRM-kL-d2I"/>
+                                            <action selector="latteButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="cCM-HN-eQa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-pq-6qS" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
+                                        <rect key="frame" x="184" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <state key="normal" title="Capuchino">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="capuchinoButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="min-i3-1Jn"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=regular" spacing="24"/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWs-bw-c7G" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
-                                <rect key="frame" x="359" y="602" width="221" height="100"/>
-                                <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                <state key="normal" title="Warm Milk">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="warmMilkButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="Pfr-Xu-5yh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-sR-4XZ" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
-                                <rect key="frame" x="28" y="494" width="235.5" height="97"/>
-                                <color key="backgroundColor" red="0.81440482655228308" green="0.81492467250799239" blue="0.97071303934010156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="DSA-k0-MDw"/>
-                                    <constraint firstAttribute="height" constant="82" id="RhB-KQ-wA6"/>
-                                    <constraint firstAttribute="width" constant="100" id="p9K-Nm-BTf"/>
-                                    <constraint firstAttribute="width" constant="94" id="zOE-8P-pPh"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="1Tw-1r-Qtk"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="BVG-bm-9Di"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="KCX-WI-lXo"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="OJo-zk-6AF"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="biB-tD-JNi"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="dgP-vx-WT8"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="e1D-cu-3LC"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="eu8-0S-VFY"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="lKt-SG-2Uf"/>
+                                    <constraint firstItem="gTh-pq-6qS" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="saI-Gi-Vl6"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="veb-TQ-VW3"/>
+                                    <constraint firstItem="zTK-Nw-yPa" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="x56-DV-TAR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                <state key="normal" title="Americano">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="DSA-k0-MDw"/>
-                                        <exclude reference="RhB-KQ-wA6"/>
-                                        <exclude reference="p9K-Nm-BTf"/>
-                                        <exclude reference="zOE-8P-pPh"/>
+                                        <exclude reference="1Tw-1r-Qtk"/>
+                                        <exclude reference="KCX-WI-lXo"/>
+                                        <exclude reference="lKt-SG-2Uf"/>
+                                        <exclude reference="veb-TQ-VW3"/>
+                                        <exclude reference="x56-DV-TAR"/>
+                                        <exclude reference="OJo-zk-6AF"/>
+                                        <exclude reference="biB-tD-JNi"/>
+                                        <exclude reference="dgP-vx-WT8"/>
+                                        <exclude reference="e1D-cu-3LC"/>
+                                        <exclude reference="eu8-0S-VFY"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
+                                <variation key="heightClass=compact-widthClass=regular" spacing="90">
                                     <mask key="constraints">
-                                        <include reference="RhB-KQ-wA6"/>
-                                        <include reference="zOE-8P-pPh"/>
+                                        <include reference="lKt-SG-2Uf"/>
+                                        <include reference="veb-TQ-VW3"/>
+                                        <include reference="OJo-zk-6AF"/>
+                                        <include reference="e1D-cu-3LC"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="DSA-k0-MDw"/>
-                                        <include reference="p9K-Nm-BTf"/>
+                                        <exclude reference="1Tw-1r-Qtk"/>
+                                        <include reference="KCX-WI-lXo"/>
+                                        <exclude reference="x56-DV-TAR"/>
+                                        <exclude reference="biB-tD-JNi"/>
+                                        <include reference="dgP-vx-WT8"/>
+                                        <exclude reference="eu8-0S-VFY"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="americanoButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="UjB-Jc-wvA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-Nw-yPa" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
-                                <rect key="frame" x="564.5" y="494" width="235.5" height="97"/>
-                                <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                <state key="normal" title="Latte">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="latteButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="cCM-HN-eQa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-pq-6qS" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
-                                <rect key="frame" x="292.5" y="494" width="235" height="97"/>
-                                <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                <state key="normal" title="Capuchino">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="capuchinoButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="min-i3-1Jn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xz-Xi-qkX" customClass="RoundButton" customModule="CoffeeMachine" customModuleProvider="target">
-                                <rect key="frame" x="88" y="602" width="219" height="100"/>
-                                <color key="backgroundColor" red="0.81440482660000002" green="0.8149246725" blue="0.97071303929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
-                                <state key="normal" title="Flat White">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="flatWhiteButton:" destination="yvH-JN-6Hg" eventType="touchUpInside" id="can-Oh-r3E"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E3P-jY-des"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="width" secondItem="gTh-pq-6qS" secondAttribute="width" id="22j-6o-Fbc"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="3hj-sO-ySd"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="28" id="3tv-Em-Qnh"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="4Vz-S9-ajl"/>
-                            <constraint firstItem="Kyt-jY-x0Q" firstAttribute="top" secondItem="Rxf-XW-U6R" secondAttribute="bottom" constant="30" id="5qh-JY-VbW"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="7v0-Cd-jjp"/>
                             <constraint firstItem="hUG-c3-Iod" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="20" id="8iC-b8-5lK"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="8lr-Dc-w81"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="top" secondItem="fuI-sR-4XZ" secondAttribute="top" id="9dH-Tb-pB6"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="width" secondItem="Kyt-jY-x0Q" secondAttribute="width" id="AKV-6Z-bUJ"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="B1d-tS-cpt"/>
+                            <constraint firstItem="Z0J-i3-Qrv" firstAttribute="top" secondItem="d0H-Ta-r2Y" secondAttribute="bottom" constant="17" id="A0e-Ea-Nif"/>
                             <constraint firstItem="Rxf-XW-U6R" firstAttribute="top" secondItem="hUG-c3-Iod" secondAttribute="bottom" constant="31" id="BEo-MW-HJb"/>
-                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="zTK-Nw-yPa" secondAttribute="trailing" constant="20" id="Bgq-eQ-Yc6"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="leading" secondItem="zTK-Nw-yPa" secondAttribute="trailing" constant="45" id="C3o-69-zro"/>
                             <constraint firstItem="hUG-c3-Iod" firstAttribute="top" secondItem="E3P-jY-des" secondAttribute="top" constant="21" id="Cii-rG-3GI"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="DDE-4v-lgf"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="EJ1-Rf-Hza"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="gTh-pq-6qS" secondAttribute="trailing" constant="85" id="GC9-Pb-5eX"/>
-                            <constraint firstItem="JWs-bw-c7G" firstAttribute="leading" secondItem="2Xz-Xi-qkX" secondAttribute="trailing" constant="52" id="GRS-az-Hc8"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="GTE-tX-f13"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="GZf-c6-9wh"/>
-                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="xmD-FN-mwF" secondAttribute="trailing" constant="50" id="Hgh-u7-7j9"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="HlY-w9-2B1"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="IQn-gL-BO1"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="leading" secondItem="fuI-sR-4XZ" secondAttribute="trailing" constant="43" id="JWz-wj-Gga"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="top" secondItem="fuI-sR-4XZ" secondAttribute="top" id="OQI-4m-dgX"/>
-                            <constraint firstItem="JWs-bw-c7G" firstAttribute="width" secondItem="2Xz-Xi-qkX" secondAttribute="width" multiplier="1.01075" id="QBX-1X-wra"/>
-                            <constraint firstItem="2Xz-Xi-qkX" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="88" id="Qfg-ip-ZbR"/>
-                            <constraint firstItem="2Xz-Xi-qkX" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" multiplier="0.93" id="SIN-wb-5Zb"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="leading" secondItem="fuI-sR-4XZ" secondAttribute="trailing" constant="29" id="V1D-gr-sYY"/>
-                            <constraint firstItem="Kyt-jY-x0Q" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="50" id="VDQ-Ah-RuF"/>
-                            <constraint firstItem="Kyt-jY-x0Q" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="32" id="Vzr-0s-M2u"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="Kyt-jY-x0Q" secondAttribute="trailing" constant="556" id="Y2y-HD-Clj"/>
                             <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="Rxf-XW-U6R" secondAttribute="trailing" constant="20" id="YOQ-4G-lZW"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="zTK-Nw-yPa" secondAttribute="trailing" constant="240" id="ZaF-qh-gP6"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="height" secondItem="gTh-pq-6qS" secondAttribute="height" id="bkR-pC-OcO"/>
-                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="JWs-bw-c7G" secondAttribute="trailing" constant="87" id="eaL-PK-OMU"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="fqk-DW-rEf"/>
-                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="xmD-FN-mwF" secondAttribute="trailing" constant="20" id="hEI-lS-Jq5"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="Kyt-jY-x0Q" secondAttribute="trailing" constant="572" id="hnJ-oG-Pem"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="k7v-pi-qrM"/>
+                            <constraint firstItem="Z0J-i3-Qrv" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="23" id="blM-6T-5ZU"/>
+                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="Z0J-i3-Qrv" secondAttribute="trailing" constant="23" id="c5q-Mn-jnx"/>
+                            <constraint firstItem="ky8-NJ-noX" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="62" id="ia8-qq-gaT"/>
+                            <constraint firstItem="d0H-Ta-r2Y" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="25" id="igq-uL-5z4"/>
                             <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="hUG-c3-Iod" secondAttribute="trailing" constant="20" id="kgn-BE-oeh"/>
                             <constraint firstItem="Rxf-XW-U6R" firstAttribute="leading" secondItem="E3P-jY-des" secondAttribute="leading" constant="20" id="kiK-oX-iEl"/>
-                            <constraint firstItem="JWs-bw-c7G" firstAttribute="top" secondItem="2Xz-Xi-qkX" secondAttribute="top" id="l9u-ge-zpv"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="leading" secondItem="Kyt-jY-x0Q" secondAttribute="trailing" constant="85" id="n3W-Bd-GuO"/>
-                            <constraint firstItem="gTh-pq-6qS" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" id="pOz-3U-oor"/>
-                            <constraint firstItem="Kyt-jY-x0Q" firstAttribute="top" secondItem="Rxf-XW-U6R" secondAttribute="bottom" constant="28" id="pTe-tB-xj7"/>
-                            <constraint firstItem="JWs-bw-c7G" firstAttribute="height" secondItem="2Xz-Xi-qkX" secondAttribute="height" id="rW0-U3-UTH"/>
-                            <constraint firstItem="fuI-sR-4XZ" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="bottom" constant="115" id="sLm-qv-wPI"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="t2a-WK-4IA"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="width" secondItem="fuI-sR-4XZ" secondAttribute="width" id="uDY-2V-PBG"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="Kyt-jY-x0Q" secondAttribute="trailing" constant="130" id="vBb-3U-967"/>
-                            <constraint firstItem="zTK-Nw-yPa" firstAttribute="leading" secondItem="gTh-pq-6qS" secondAttribute="trailing" constant="37" id="xXv-hv-S6e"/>
-                            <constraint firstItem="2Xz-Xi-qkX" firstAttribute="top" secondItem="fuI-sR-4XZ" secondAttribute="bottom" constant="11" id="y0Q-uU-Nak"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="leading" secondItem="fuI-sR-4XZ" secondAttribute="trailing" constant="377" id="y7d-SD-Tf7"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="yUg-rV-bow"/>
+                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="d0H-Ta-r2Y" secondAttribute="trailing" constant="25" id="lOc-LJ-Vaa"/>
+                            <constraint firstItem="ky8-NJ-noX" firstAttribute="top" secondItem="Z0J-i3-Qrv" secondAttribute="bottom" constant="8" symbolic="YES" id="lfa-Gl-s0s"/>
+                            <constraint firstItem="d0H-Ta-r2Y" firstAttribute="top" secondItem="Rxf-XW-U6R" secondAttribute="bottom" constant="28" id="rXF-Ie-jzP"/>
+                            <constraint firstItem="E3P-jY-des" firstAttribute="trailing" secondItem="ky8-NJ-noX" secondAttribute="trailing" constant="58" id="vNx-lE-dzE"/>
                             <constraint firstItem="Rxf-XW-U6R" firstAttribute="top" secondItem="hUG-c3-Iod" secondAttribute="bottom" constant="31" id="ymB-o9-5D9"/>
-                            <constraint firstItem="xmD-FN-mwF" firstAttribute="top" secondItem="Kyt-jY-x0Q" secondAttribute="top" id="zxn-k5-xjC"/>
-                            <constraint firstItem="2Xz-Xi-qkX" firstAttribute="height" secondItem="fuI-sR-4XZ" secondAttribute="height" multiplier="1.03093" id="zyD-ZT-JWg"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Bgq-eQ-Yc6"/>
-                                <exclude reference="Hgh-u7-7j9"/>
-                                <exclude reference="eaL-PK-OMU"/>
-                                <exclude reference="hEI-lS-Jq5"/>
-                                <exclude reference="5qh-JY-VbW"/>
-                                <exclude reference="VDQ-Ah-RuF"/>
-                                <exclude reference="Vzr-0s-M2u"/>
-                                <exclude reference="pTe-tB-xj7"/>
-                                <exclude reference="AKV-6Z-bUJ"/>
-                                <exclude reference="GC9-Pb-5eX"/>
-                                <exclude reference="GZf-c6-9wh"/>
-                                <exclude reference="HlY-w9-2B1"/>
-                                <exclude reference="IQn-gL-BO1"/>
-                                <exclude reference="Y2y-HD-Clj"/>
-                                <exclude reference="ZaF-qh-gP6"/>
-                                <exclude reference="hnJ-oG-Pem"/>
-                                <exclude reference="t2a-WK-4IA"/>
-                                <exclude reference="vBb-3U-967"/>
-                                <exclude reference="y7d-SD-Tf7"/>
-                                <exclude reference="yUg-rV-bow"/>
-                                <exclude reference="zxn-k5-xjC"/>
-                                <exclude reference="3tv-Em-Qnh"/>
-                                <exclude reference="4Vz-S9-ajl"/>
-                                <exclude reference="DDE-4v-lgf"/>
-                                <exclude reference="EJ1-Rf-Hza"/>
-                                <exclude reference="n3W-Bd-GuO"/>
-                                <exclude reference="sLm-qv-wPI"/>
-                                <exclude reference="3hj-sO-ySd"/>
-                                <exclude reference="9dH-Tb-pB6"/>
-                                <exclude reference="B1d-tS-cpt"/>
-                                <exclude reference="C3o-69-zro"/>
-                                <exclude reference="GTE-tX-f13"/>
-                                <exclude reference="V1D-gr-sYY"/>
-                                <exclude reference="fqk-DW-rEf"/>
-                                <exclude reference="pOz-3U-oor"/>
-                                <exclude reference="22j-6o-Fbc"/>
-                                <exclude reference="7v0-Cd-jjp"/>
-                                <exclude reference="8lr-Dc-w81"/>
-                                <exclude reference="JWz-wj-Gga"/>
-                                <exclude reference="OQI-4m-dgX"/>
-                                <exclude reference="bkR-pC-OcO"/>
-                                <exclude reference="k7v-pi-qrM"/>
-                                <exclude reference="uDY-2V-PBG"/>
-                                <exclude reference="xXv-hv-S6e"/>
-                                <exclude reference="Qfg-ip-ZbR"/>
-                                <exclude reference="SIN-wb-5Zb"/>
-                                <exclude reference="y0Q-uU-Nak"/>
-                                <exclude reference="zyD-ZT-JWg"/>
-                                <exclude reference="GRS-az-Hc8"/>
-                                <exclude reference="QBX-1X-wra"/>
-                                <exclude reference="l9u-ge-zpv"/>
-                                <exclude reference="rW0-U3-UTH"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="hEI-lS-Jq5"/>
-                                <include reference="Vzr-0s-M2u"/>
-                                <include reference="pTe-tB-xj7"/>
-                                <include reference="AKV-6Z-bUJ"/>
-                                <include reference="GC9-Pb-5eX"/>
-                                <exclude reference="GZf-c6-9wh"/>
-                                <exclude reference="HlY-w9-2B1"/>
-                                <include reference="IQn-gL-BO1"/>
-                                <exclude reference="Y2y-HD-Clj"/>
-                                <exclude reference="ZaF-qh-gP6"/>
-                                <exclude reference="hnJ-oG-Pem"/>
-                                <exclude reference="t2a-WK-4IA"/>
-                                <exclude reference="y7d-SD-Tf7"/>
-                                <exclude reference="yUg-rV-bow"/>
-                                <exclude reference="4Vz-S9-ajl"/>
-                                <include reference="DDE-4v-lgf"/>
-                                <include reference="EJ1-Rf-Hza"/>
-                                <include reference="n3W-Bd-GuO"/>
-                                <include reference="C3o-69-zro"/>
-                                <include reference="GTE-tX-f13"/>
-                                <include reference="fqk-DW-rEf"/>
-                                <include reference="pOz-3U-oor"/>
-                                <include reference="7v0-Cd-jjp"/>
-                                <include reference="8lr-Dc-w81"/>
-                                <include reference="JWz-wj-Gga"/>
-                                <include reference="k7v-pi-qrM"/>
-                                <include reference="uDY-2V-PBG"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="Bgq-eQ-Yc6"/>
-                                <include reference="Hgh-u7-7j9"/>
-                                <include reference="eaL-PK-OMU"/>
-                                <include reference="5qh-JY-VbW"/>
-                                <include reference="VDQ-Ah-RuF"/>
-                                <include reference="vBb-3U-967"/>
-                                <include reference="zxn-k5-xjC"/>
-                                <include reference="3tv-Em-Qnh"/>
-                                <include reference="sLm-qv-wPI"/>
-                                <include reference="3hj-sO-ySd"/>
-                                <include reference="9dH-Tb-pB6"/>
-                                <include reference="B1d-tS-cpt"/>
-                                <include reference="V1D-gr-sYY"/>
-                                <include reference="22j-6o-Fbc"/>
-                                <include reference="OQI-4m-dgX"/>
-                                <include reference="bkR-pC-OcO"/>
-                                <include reference="xXv-hv-S6e"/>
-                                <include reference="Qfg-ip-ZbR"/>
-                                <include reference="SIN-wb-5Zb"/>
-                                <include reference="y0Q-uU-Nak"/>
-                                <include reference="zyD-ZT-JWg"/>
-                                <include reference="GRS-az-Hc8"/>
-                                <include reference="QBX-1X-wra"/>
-                                <include reference="l9u-ge-zpv"/>
-                                <include reference="rW0-U3-UTH"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="addBeans" destination="7eU-Gx-Cjn" id="2PZ-i2-l5V"/>
@@ -454,6 +356,7 @@
                         <outlet property="addWater" destination="rM6-rq-lqd" id="XjR-hR-V2W"/>
                         <outlet property="beansVolumeSlider" destination="iIn-PC-yeo" id="ARw-8A-xWF"/>
                         <outlet property="clearTrash" destination="5T4-cC-cMl" id="0oD-js-tPm"/>
+                        <outlet property="cnstrMakeAmericanoWight" destination="Cw7-uS-ZaL" id="aAy-Mw-IaB"/>
                         <outlet property="label" destination="hUG-c3-Iod" id="khk-UA-lc4"/>
                         <outlet property="makeAmericano" destination="fuI-sR-4XZ" id="CTN-gB-BI3"/>
                         <outlet property="makeCapuchino" destination="gTh-pq-6qS" id="yuF-MK-Gta"/>
@@ -467,24 +370,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Rf-G1-m36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-872.54464285714278" y="115.94202898550725"/>
+            <point key="canvasLocation" x="-875.625" y="114.08450704225352"/>
         </scene>
     </scenes>
     <designables>
         <designable name="2Xz-Xi-qkX">
-            <size key="intrinsicContentSize" width="87" height="29"/>
+            <size key="intrinsicContentSize" width="72" height="26"/>
         </designable>
         <designable name="JWs-bw-c7G">
-            <size key="intrinsicContentSize" width="94" height="29"/>
+            <size key="intrinsicContentSize" width="77" height="26"/>
         </designable>
         <designable name="fuI-sR-4XZ">
-            <size key="intrinsicContentSize" width="94" height="29"/>
+            <size key="intrinsicContentSize" width="78" height="26"/>
         </designable>
         <designable name="gTh-pq-6qS">
-            <size key="intrinsicContentSize" width="93" height="29"/>
+            <size key="intrinsicContentSize" width="77" height="26"/>
         </designable>
         <designable name="zTK-Nw-yPa">
-            <size key="intrinsicContentSize" width="42" height="29"/>
+            <size key="intrinsicContentSize" width="35" height="26"/>
         </designable>
     </designables>
     <resources>

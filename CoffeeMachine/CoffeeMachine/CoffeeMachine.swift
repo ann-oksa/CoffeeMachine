@@ -34,6 +34,7 @@ class ComponentContain : Equatable {
     func addVolume(_ extraVol: Int) {
         volume += extraVol
     }
+    
     func removeVolume(_ extraVol: Int) {
         volume -= extraVol
     }
