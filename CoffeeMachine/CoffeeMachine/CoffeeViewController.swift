@@ -180,6 +180,7 @@ private extension CoffeeViewController {
 extension CoffeeViewController : CoffeeMachineDelegate {
     func coffeeMachineAvailable() {
         print("coffeeMachineAvailable")
+        makeButtonEnabled()
     }
     
     
