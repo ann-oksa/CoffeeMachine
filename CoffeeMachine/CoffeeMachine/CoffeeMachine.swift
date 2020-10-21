@@ -39,6 +39,9 @@ class ComponentContain : Equatable {
         volume -= extraVol
     }
 }
+protocol CoffeeMachineDelegate : class {
+    func coffeeMachineDidBecomeAvailable()
+}
 
 protocol CMachineProtocol {
     func letsMakeDrink(_ drink: MyDrink) -> Bool
@@ -56,6 +59,9 @@ class CoffeeMachine: CMachineProtocol {
     var trash = 0
     var trashCapacity = 50
     var message = ""
+    weak var delegate : CoffeeMachineDelegate?
+    var isAvailable = true
+    
     
     init() {
         availableComponents.append(ComponentContain(type: .beans, volume: 100))
@@ -90,6 +96,9 @@ class CoffeeMachine: CMachineProtocol {
     }
     
     func canMakeADrink(_ drink: MyDrink) -> Bool {
+        guard isAvailable == true else {
+            return false
+        }
         for drinkComponent in drink.components {
             if let machineComponent = getComponentByType(drinkComponent.type) {
                 if machineComponent.volume < drinkComponent.volume {
@@ -108,6 +117,11 @@ class CoffeeMachine: CMachineProtocol {
     
     func letsMakeDrink(_ drink: MyDrink) -> Bool {
         if canMakeADrink(drink) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.isAvailable = true
+                self.delegate?.coffeeMachineDidBecomeAvailable()
+            }
+            isAvailable = false
             for drinkComponent in drink.components {
                 let machineComponent = getComponentByType(drinkComponent.type)
                 machineComponent?.removeVolume(drinkComponent.volume)
@@ -127,6 +141,5 @@ class CoffeeMachine: CMachineProtocol {
     }
     
 }
-
 
 

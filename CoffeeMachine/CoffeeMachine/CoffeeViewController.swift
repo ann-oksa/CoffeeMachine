@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class CoffeeViewController: UIViewController {
+ 
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var waterVolumeSlider: UISlider!
@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     let flatWhite = DrinkFactory.getFlatWhite()
     let warmMilk = DrinkFactory.getWarmMilk()
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,10 @@ class ViewController: UIViewController {
         setupMinMaxValueOfComponent(.beans, for: beansVolumeSlider)
         trashVolumeSlider.maximumValue = Float(cm.trashCapacity)
         
-        updateAllValues()
+        reloadVolumeSliders()
+        
+    
+        cm.delegate = self
     }
     
     @IBAction func addWaterButton(_ sender: UIButton) {
@@ -64,8 +68,8 @@ class ViewController: UIViewController {
     @IBAction func cleanTrashButton(_ sender: UIButton) {
         _ = cm.refreshTrash()
         label.text = cm.message
-        updateAllValues()
-        enabled()
+        reloadVolumeSliders()
+        makeButtonEnabled()
     }
     
     @IBAction func americanoButton(_ sender: UIButton) {
@@ -92,39 +96,42 @@ class ViewController: UIViewController {
     
 }
 
-private extension ViewController {
+private extension CoffeeViewController {
     func setupMinMaxValueOfComponent(_ type: MyCoffeeComponentType, for slider: UISlider) {
         slider.maximumValue = Float(cm.valueForAdd)
-        slider.minimumValue = Float(cm.getComponentByType(type)!.minvol)
+        slider.minimumValue = Float(cm.getComponentByType(type)?.minvol ?? 0)
     }
     
     func updateValueOfComponent(_ type: MyCoffeeComponentType, for slider: UISlider) {
         UIView.animate(withDuration: 0.4) {
-            slider.setValue(Float(self.cm.getComponentByType(type)!.volume), animated: true)
+            slider.setValue(Float(self.cm.getComponentByType(type)?.volume ?? 0), animated: true)
         }
     }
     
-    func updateAllValues() {
+    func reloadVolumeSliders() {
         updateValueOfComponent(.water, for: waterVolumeSlider)
         updateValueOfComponent(.milk, for: milkVolumeSlider)
         updateValueOfComponent(.beans, for: beansVolumeSlider)
         trashVolumeSlider.value = Float(cm.trash)
     }
     
-    func enabled() {
-        let drinks = [makeAmericano, makeCapuchino, makeLatte, makeFlatWhite, makeWarmMilk]
-        for drink in drinks {
-            if drink?.isEnabled == false{
-                drink?.isEnabled = true
-            }
+    func makeButtonEnabled() {
+        let makeDrinkButtons : [UIButton] = [makeAmericano, makeCapuchino, makeLatte, makeFlatWhite, makeWarmMilk]
+//        for drink in makeDrinkButtons {
+//            if drink.isEnabled == false{
+//                drink.isEnabled = true
+//            }
+//        }
+        for eachbutton in makeDrinkButtons {
+           eachbutton.isEnabled = cm.isAvailable
         }
     }
     
     func addComponent(type: MyCoffeeComponentType) {
         _ = cm.addSomeComponent(type)
         label.text = cm.message
-        updateAllValues()
-        enabled()
+        reloadVolumeSliders()
+        makeButtonEnabled()
     }
     
     func makeAlert(title: String) {
@@ -135,18 +142,46 @@ private extension ViewController {
     }
     
     func makeDrink(_ drink: MyDrink, from button: UIButton) {
-        if cm.canMakeADrink(drink) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                button.isEnabled = true
+//        if cm.canMakeADrink(drink) {
+//            if cm.isAvailable == false{
+//                button.isEnabled = false
+//            }
+//
+//
+//
+//            _ = cm.letsMakeDrink(drink)
+//            label.text = cm.message
+//            button.isEnabled = true
+//        } else {
+//            label.text = cm.message
+//            button.isEnabled = false
+//        }
+//        reloadVolumeSliders()
+        
+        
+        if cm.canMakeADrink(drink){
+            button.isEnabled = true
+        _ = cm.letsMakeDrink(drink)
+            button.isEnabled = cm.isAvailable
+        label.text = cm.message
+            let makeDrinkButtons : [UIButton] = [makeAmericano, makeCapuchino, makeLatte, makeFlatWhite, makeWarmMilk]
+            for drink in makeDrinkButtons {
+                drink.isEnabled = true
             }
-            button.isEnabled = false
-            _ = cm.letsMakeDrink(drink)
-            label.text = cm.message
         } else {
             label.text = cm.message
             button.isEnabled = false
         }
-        updateAllValues()
+        reloadVolumeSliders()
+        
     }
+    
+}
+extension CoffeeViewController : CoffeeMachineDelegate {
+    func coffeeMachineDidBecomeAvailable() {
+        print("coffeeMachineAvailable")
+        makeButtonEnabled()
+    }
+    
     
 }
