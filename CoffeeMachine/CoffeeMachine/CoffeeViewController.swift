@@ -178,7 +178,7 @@ private extension CoffeeViewController {
     
 }
 extension CoffeeViewController : CoffeeMachineDelegate {
-    func coffeeMachineAvailable() {
+    func coffeeMachineDidBecomeAvailable() {
         print("coffeeMachineAvailable")
         makeButtonEnabled()
     }

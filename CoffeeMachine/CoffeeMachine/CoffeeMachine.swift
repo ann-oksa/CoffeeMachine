@@ -40,7 +40,7 @@ class ComponentContain : Equatable {
     }
 }
 protocol CoffeeMachineDelegate : class {
-    func coffeeMachineAvailable()
+    func coffeeMachineDidBecomeAvailable()
 }
 
 protocol CMachineProtocol {
@@ -119,7 +119,7 @@ class CoffeeMachine: CMachineProtocol {
         if canMakeADrink(drink) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self.isAvailable = true
-                self.delegate?.coffeeMachineAvailable()
+                self.delegate?.coffeeMachineDidBecomeAvailable()
             }
             isAvailable = false
             for drinkComponent in drink.components {
